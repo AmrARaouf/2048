@@ -62,8 +62,8 @@ KeyboardInputManager.prototype.listen = function () {
       }
     }
 
-    // R key restarts the game
-    if (!modifiers && event.which === 82) {
+    // Space bar restarts the game
+    if (!modifiers && event.which === 32) {
       self.restart.call(self, event);
     }
   });
