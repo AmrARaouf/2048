@@ -64,15 +64,15 @@ HTMLActuator.prototype.addTile = function (tile) {
   var source = "";
 
   switch(tile.value) {
-    case 2: source = "alaa_abdellatif"; break;
-    case 4: source = "slim_abdennader"; break;
-    case 8: source = "yasser_hegazy"; break;
-    case 16: source = "cherif_salama"; break;
-    case 32: source = "ayman_elnaggar"; break;
+    case 2: source = "hany_elsharkawy"; break;
+    case 4: source = "alaa_abdellatif"; break;
+    case 8: source = "georg_jung"; break;
+    case 16: source = "slim_abdennader"; break;
+    case 32: source = "yasser_hegazy"; break;
     case 64: source = "haytham_ismail"; break;
-    case 128: source = ""; break;
-    case 256: source = ""; break;
-    case 512: source = ""; break;
+    case 128: source = "cherif_salama"; break;
+    case 256: source = "ayman_elnaggar"; break;
+    case 512: source = "hazem_abbas"; break;
     case 1024: source = "ashraf_mansour"; break;
     case 2048: source = "slim_abdennader_bonus"; break;
   }
