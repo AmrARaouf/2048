@@ -60,9 +60,29 @@ HTMLActuator.prototype.addTile = function (tile) {
   if (tile.value > 2048) classes.push("tile-super");
 
   this.applyClasses(wrapper, classes);
+  // AMRARAOUF
+  var source = "";
 
+  switch(tile.value) {
+    case 2: source = "alaa_abdellatif"; break;
+    case 4: source = "slim_abdennader"; break;
+    case 8: source = "yasser_hegazy"; break;
+    case 16: source = "cherif_salama"; break;
+    case 32: source = "ayman_elnaggar"; break;
+    case 64: source = "haytham_ismail"; break;
+    case 128: source = ""; break;
+    case 256: source = ""; break;
+    case 512: source = ""; break;
+    case 1024: source = "ashraf_mansour"; break;
+    case 2048: source = "slim_abdennader_bonus"; break;
+  }
+
+  var image = document.createElement("img");
+  image.setAttribute("src", "img/" + source + ".png");
+  image.setAttribute("class", "face");
   inner.classList.add("tile-inner");
-  inner.textContent = tile.value;
+  //inner.textContent = tile.value;
+  inner.appendChild(image);
 
   if (tile.previousPosition) {
     // Make sure that the tile gets rendered in the previous position first
